@@ -2,30 +2,84 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <title>标题</title>
+    <title>中国发展与人民共享</title>
+	<style type="text/css">
+	h4 {background-color: #AEEEEE }
+	h3 {background-color: #AEEEEE}
+	.float
+	{
+	float: right;
+	margin: 25px;}
+	.aii
+	{
+	    width: 300px;
+	    border: 50px double skyblue;
+	    padding: 50px;
+	    margin: 25px;}
+	</style>
 </head>
-<body>
 <form method="POST" action="/hurun">
-    <select name="the_region_selected">
-        {% for item in the_select_region %}
-            <option value="{{ item.index }}">{{ item.name }}</option>
-        {% endfor %}
-    </select>
+    <input type="radio" name="source" value="0">居民消费水平
+    <input type="radio" name="source" value="1">人均GDP与人均消费水平
+    <input type="radio" name="source" value="2">GDP水平情况
+    <input type="radio" name="source" value="3">分省人均GDP
 <p><input value='Do it!' type='SUBMIT'></p>
+
 </form>
 
-<div id="bar" style="float: left;">
+<div id="bar" style="float:right">
 {{ the_plot_all|safe }}
 </div>
 
-<div id="map">
-  {{ the_res|safe }}
-  </div>
+<body>
+<div class="aii" style="width: 80%">
+<form method="POST" action="/hurun">
+    <select name="the_region_selected">
+    </select>
+<div id="header">
+<h1>故事说明</h1>
+</div>
+<body bgcolor="#BBFFFF">
+<div id="section">
+<h1>中国发展与人民共享</h1>
+<p>
+  <h3>数据分析</h3>
+  <h4>1.各省居民消费水平不断增长。</h4>
+  <h4>1.各省居民消费水平差距巨大，最大差距达5至6倍之大。</h4>
+  <h3>结论</h3>
+  <h4>1.居民消费水平真正体现了居民享受经济发展的成果水平，结合人均GDP创造数据，可以看出中国经济发展的创造和经济发展成果的享受呈现了同比增长的趋势。</h4>
+  <h4>1.原本经济发展较落后的地区在持续的经济增长态势中，依旧处于落后的趋势，如果不加以干预，落后地区与发达地区的差距会愈加扩大，容易造成社会分层，带来社会不安因素。</h4>
+  <h3>数据分析</h3>
+  <h4>分省年度GDP数据展现了各省GDP数值差距之大，GDP数值最小的西藏从2013年815亿元增长到2017年的1310亿元，数据显示了两个现象，</h4>
+  <h4>1.西藏自治区的GDP在全国处于低水平。</h4>
+  <h4>2.西藏自治区GDP在不断的增长中。GDP数值最大的广东省从2013年62474亿元到2017年增长到89705亿元，广东省的GDP也在在不断的增长。</h4>
+  <h3>结论</h3>
+  <h4>中国分省GDP差距大，同时中国各省GDP在不断的增长，中国的经济不断向前发展着。</h4>
+  <h3>数据分析</h3>
+  <h4>历年数据，中国分省人均GDP不断增长。以2017年为例可以看出中国分省人均GDP水平分布不均，最高的上海市可以达到126634元，最低的甘肃仅有28497元。</h4>
+  <h3>结论</h3>
+  <h4>中国经济的发展，在人均GDP创造上可以体现，同时在经济高速发展的过程中，也造成了不平衡的状态，以甘肃、西藏、云南和贵州等偏远地区享受到的发展速度远远低于东部沿海地区，中国经济发展展现了不平衡的状态。</h4>
+  <h4>地区发展的不平衡始终是中国经济发展的缺陷，缩小地区发展差距，提高全民幸福感应该是国家的要务。</h4>
+  <h3>数据分析</h3>
+  <h4>图抽取了2017年分省人均GDP和2017年分省人均消费水平数据，图中的数据分析显示，人均消费水平一般为人均消费水平的40&的水平。</h4>
+  <h4>图中可以分析出人均GDP高的地区，相对的人均消费水平也会相对较高，少的地区也会相对少。</h4>
+  <h3>结论</h3>
+  <h4>中国经济的发展呈现出地区不平衡状态。</h4>
+  <h4>中国GDP创造高的地区相对的消费水平也会较高。</h4>
+  <h4>中国经济的发展确实落实到了居民的头上，GDP的不断创造之下，居民的消费水平也在不断地提升。</h4>
+  <h4>中国经济发展呈现了地区发展不平衡状态，随着经济地不断发展，地区的不平衡状态也在不断地扩大，继续的扩大可能会造成社会性矛盾。</h4>
+  <h3>建议</h3>
+  <h4>坚持经济发展优先原则，继续保持经济的持续增长。</h4>
+  <h4>平衡地区发展不平衡状态，扶持中西部经济发展，实现先富带动后富策略，坚持走共同富裕道路。</h4>
+  <h4>实行产业转移，将东部过剩的产业转移到中西部，实现产业扶贫，才是可持续化发展的选择。</h4>
+  <h4>坚持重点扶贫和精准扶贫策略，实现“两个一百年”奋斗目标。</h4>
+</p>
 
-  <div id="map">
-  {{ the_res2|safe }}
-  </div>
+</div>
 
+<div id="footer" left>
+
+</div>
 
 </body>
 </html>

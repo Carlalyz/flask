@@ -51,13 +51,13 @@ def hu_run_2019():
 @app.route('/hurun',methods=['POST'])
 #三个图表
 def timeline_bar():
-    the_region_selected = int(request.form.get("the_region_selected"))
+    the_region_selected = int(request.form.get("source"))
     data_str = df_data[the_region_selected]
     data_str = data_str.to_html()
-    # data_str = df.to_html()
+    data_str = df.to_html()
     df_data2 = ""
-    # if the_region_selected == 1:
-    #   df_data2 = pd.read_csv('cpi.csv',encoding='utf-8').to_html()
+    if the_region_selected == 1:
+      df_data2 = pd.read_csv('cpi.csv',encoding='utf-8').to_html()
 
 
     return render_template('results2.html',
