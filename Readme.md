@@ -1,8 +1,8 @@
 ---
 ### 技术文档之总结说明
 
-- [Pythonanywhere部署网址](http://carlalyz.pythonanywhere.com/)
-- [GitHub的URL](https://github.com/Carlalyz/flask)
+* [Pythonanywhere部署网址](http://carlalyz.pythonanywhere.com/)
+* [GitHub的URL](https://github.com/Carlalyz/flask)
 
 本项目使用Python搭建Flask网站
 
