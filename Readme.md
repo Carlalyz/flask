@@ -1,6 +1,6 @@
 # 技术文档之总结说明
 
-* [Pythonanywhere部署网址](http://cicilee22lym.pythonanywhere.com/)
+* [Pythonanywhere部署网址](http://cicilee22ly.pythonanywhere.com/)
 * [GitHub的URL](https://github.com/Carlalyz/flask)
 
 本项目使用Python搭建Flask网站
